@@ -18,11 +18,11 @@ if not api_key:
 
 client = OpenAI(api_key=api_key)
 
-DB_HOST = os.environ.get("DB_HOST", "217.71.200.156")
-DB_PORT = os.environ.get("DB_PORT", "5433")
-DB_NAME = os.environ.get("DB_NAME", "esesa")
-DB_USER = os.environ.get("DB_USER", "esesa")
-DB_PASSWORD = os.environ.get("DB_PASSWORD", "esesa")
+DB_HOST = os.environ.get("DB_HOST")
+DB_PORT = os.environ.get("DB_PORT")
+DB_NAME = os.environ.get("DB_NAME")
+DB_USER = os.environ.get("DB_USER")
+DB_PASSWORD = os.environ.get("DB_PASSWORD")
 
 
 def search_movie_database(query_type, search_term):
